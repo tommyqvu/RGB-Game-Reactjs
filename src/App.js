@@ -82,7 +82,7 @@ class App extends React.Component {
           >
             {!gameWon ? 'NEW COLORS' : 'PLAY AGAIN?'}
           </button>
-          <span id='message'>{message}</span>
+          <span className='message'>{message}</span>
           <button
             onClick={() => this.setDifficulty(3)}
             className={difficulty === 3 ? classes.selected : null}
