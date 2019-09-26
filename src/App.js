@@ -4,7 +4,7 @@ import Box from './Box';
 
 class App extends React.Component {
   state = {
-    difficulty: 3,
+    difficulty: 6,
     answer: null,
     message: null,
     gameWon: false,
@@ -92,6 +92,12 @@ class App extends React.Component {
           <button
             onClick={() => this.setDifficulty(6)}
             className={difficulty === 6 ? classes.selected : null}
+          >
+            MEDIUM
+          </button>
+          <button
+            onClick={() => this.setDifficulty(9)}
+            className={difficulty === 9 ? classes.selected : null}
           >
             HARD
           </button>
